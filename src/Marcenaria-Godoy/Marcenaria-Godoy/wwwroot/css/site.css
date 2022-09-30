@@ -1,0 +1,55 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+header{
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    height:7rem;
+    margin-left: 2rem;
+}
+
+header div{
+    margin-left: 35rem;
+}
+
+.menu a{
+    margin-right: 20px;
+}
+
+nav{
+    border-bottom: solid gray 1px;
+}
+
+.logo{
+    margin-left: 3rem;
+}
+
+.body {
+    padding-bottom: 20%;
+}
+
+.icones{
+    margin-top: 10px;
+}
+
+.path a {
+    color: gray;
+    text-decoration: none;
+}

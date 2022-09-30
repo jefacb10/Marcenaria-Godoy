@@ -1,0 +1,14 @@
+﻿.home {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.home-buttons a{
+    margin-top:9rem;
+    margin-left:3rem;
+
+}
+
+
