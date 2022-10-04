@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Marcenaria_Godoy.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/contact.css" asp-append-version="true" />
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white">
             <div class="container-fluid logo">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Marcenaria Godoy</a>
+                <a class="navbar-brand logotipo" asp-area="" asp-controller="Home" asp-action="Index">Marcenaria Godoy</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -27,10 +28,10 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="AboutUs">Quem Somos</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link text-dark dropdown-toggle role="button" data-bs-toggle="dropdown" aria-expanded="false" " asp-area="" asp-controller="Home" asp-action="Projects">
+                            <a class="nav-link text-dark dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true"aria-expanded="false">
                                 Ambientes
                             </a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li>@Html.ActionLink("Banheiro", "Bathroom", "Home", new { area = "" }, new { @class = "dropdown-item" })</li>
                                 <li>@Html.ActionLink("Quarto", "Bedroom", "Home", new { area = "" }, new { @class = "dropdown-item" })</li>
                                 <li>@Html.ActionLink("Espaço Kids", "Kids", "Home", new { area = "" }, new { @class = "dropdown-item" })</li>
@@ -48,9 +49,8 @@
                 
             </div>
         </nav>
-        <hr/>
     </header>
-    <div class="container">
+    <div class="">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
