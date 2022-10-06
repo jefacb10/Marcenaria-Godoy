@@ -11,23 +11,30 @@
     text-decoration: none;
 }
 
-.card-container{
+.card-container {
     width: 20rem;
-    height:15rem;
+    height: 15rem;
     background-color: grey;
     padding: 3rem;
-    margin:2rem;
-    display:flex;
+    margin: 2rem;
+    display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.card-container{
     color: #fff;
     font-size: 20px;
+    background-image:url("~/assets/images/banheiro.PNG");
+    background-repeat:no-repeat;
+    background-size: cover;
 }
 
-.card-container:hover{
-    font-size: 28px;
+.card-title{
+    margin-top: 5rem;
+}
+
+
+.card-container:hover {
+    opacity: 0.6;
+    filter: brightness(70%);
+    transform: scale(1.1, 1.1);
 }
 

@@ -20,6 +20,7 @@ body {
 header{
     display: flex;
     justify-content: space-between;
+    flex-wrap:wrap;
     height:7rem;
     border-bottom: solid black 1px;
 }
