@@ -1,15 +1,44 @@
 ﻿
 .contato-detalhes {
-    height: 12rem;
-    background-color: #EEEEEE;
+    background-color: #EAEAEA;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap:wrap;
+    align-items:start;
 }
 
-.contato-detalhes div{
+.contato-detalhes div {
     display: flex;
     flex-direction: column;
-    margin-right: 5rem;
+    margin-left: 5rem;
     margin-top: 2rem;
+    width: 15rem;
+    text-align: justify;
+}
+
+.contato-detalhes p:first-child{
+    font-size: 20px;
+    border-bottom: solid #808080 2px;
+    padding-bottom: 1rem;
+}
+.p-subtitle{
+    color: gray;
+}
+
+.telefone{
+    text-indent:2px;
+    
+}
+
+.contato-mapa{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    padding: 3rem;
+}
+
+p a{
+    color: black;
+    text-decoration: none;
 }
