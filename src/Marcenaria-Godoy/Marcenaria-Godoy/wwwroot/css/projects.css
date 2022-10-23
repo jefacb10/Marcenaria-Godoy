@@ -55,7 +55,15 @@
     height: 300px;
     margin-left: 10px;
     margin-top:10px;
+    cursor:pointer;
+    transition: all linear 0.4s;
 }
+
+.images img:hover{
+    filter:grayscale(100%);
+    transform:scale(1.1);
+}
+
 
 #modal-imagem{
     width: 65vw;
@@ -69,6 +77,9 @@
     top:0;
     left:0;
     visibility: hidden;
+    z-index:1;
+    opacity:0;
+    transition: visibility 0.8s linear, opacity 0.5s linear;
 }
 
 .modal-content-img{
@@ -88,8 +99,10 @@
     padding: 5px 10px;
     font-size: 25px;
     border: solid 1px #fff;
+    cursor: pointer;
 }
 
 .modal_active{
     visibility: visible;
+    opacity:1;
 }
