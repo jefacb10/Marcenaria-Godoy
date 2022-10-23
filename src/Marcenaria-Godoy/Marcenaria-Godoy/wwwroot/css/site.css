@@ -23,16 +23,16 @@ header{
     flex-wrap:wrap;
     height:7rem;
     border-bottom: solid black 1px;
+    
 }
 
 .logotipo{
     padding-right: 35rem;
 }
 
-.menu a{
+.menu a {
     margin-left: 20px;
 }
-
 
 .logo{
     margin-left: 3rem;
@@ -57,4 +57,14 @@ header{
 .path a {
     color: gray;
     text-decoration: none;
+}
+
+.btn-outline-primary{
+    border-color: red;
+    color: red;
+}
+
+.btn-outline-primary:hover {
+    background-color: red;
+    border-color:red;
 }
